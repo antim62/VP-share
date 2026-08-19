@@ -18,16 +18,16 @@
   <DefaultLocale>nl-NL</DefaultLocale>
   <DisplayName DefaultValue="VP-invoegtoepassing" />
   <Description DefaultValue="Eigen ribbon-tab &quot;VP&quot; met celbewerkingen, tekstbewerkingen, kaders/lijnen en contactpersonen-export voor VP-rapportages (vervanger van de oude VBA-invoegtoepassing)." />
-  <IconUrl DefaultValue="https://https://github.com/antim62/VP-share/assets/icon-32.png" />
-  <HighResolutionIconUrl DefaultValue="https://https://github.com/antim62/VP-share/assets/icon-80.png" />
-  <SupportUrl DefaultValue="https://https://github.com/antim62/VP-share" />
+  <IconUrl DefaultValue="https://github.com/antim62/VP-share/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://github.com/antim62/VP-share/assets/icon-80.png" />
+  <SupportUrl DefaultValue="https://github.com/antim62/VP-share" />
   <AppDomains>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook" />
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://https://github.com/antim62/VP-share/src/taskpane/taskpane.html" />
+    <SourceLocation DefaultValue="https://github.com/antim62/VP-share/src/taskpane/taskpane.html" />
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
 
@@ -306,13 +306,13 @@
 
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16" DefaultValue="https://https://github.com/antim62/VP-share/assets/icon-16.png" />
-        <bt:Image id="Icon.32" DefaultValue="https://https://github.com/antim62/VP-share/assets/icon-32.png" />
-        <bt:Image id="Icon.80" DefaultValue="https://https://github.com/antim62/VP-share/assets/icon-80.png" />
+        <bt:Image id="Icon.16" DefaultValue="https://github.com/antim62/VP-share/assets/icon-16.png" />
+        <bt:Image id="Icon.32" DefaultValue="https://github.com/antim62/VP-share/assets/icon-32.png" />
+        <bt:Image id="Icon.80" DefaultValue="https://github.com/antim62/VP-share/assets/icon-80.png" />
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Functions.Url" DefaultValue="https://https://github.com/antim62/VP-share/src/functions/functions.html" />
-        <bt:Url id="Taskpane.Url" DefaultValue="https://https://github.com/antim62/VP-share/src/taskpane/taskpane.html" />
+        <bt:Url id="Functions.Url" DefaultValue="https://github.com/antim62/VP-share/src/functions/functions.html" />
+        <bt:Url id="Taskpane.Url" DefaultValue="https://github.com/antim62/VP-share/src/taskpane/taskpane.html" />
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="TabVP.Label" DefaultValue="VP" />
