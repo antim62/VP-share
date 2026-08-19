@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>VP - Contactpersonen naar Outlook</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <link rel="stylesheet" href="taskpane.css" />
+</head>
+<body>
+  <h1>Contactpersonen naar Outlook</h1>
+
+  <p>
+    Dit knooponderdeel kan zelf niet meer rechtstreeks in Outlook werken (dat kon de oude
+    VBA-knop wel, via lokale Outlook-automatisering - een Add-in draait in een beveiligde
+    sandbox zonder die toegang). In plaats daarvan:
+  </p>
+
+  <ol>
+    <li>Klik hieronder op <strong>"Voorbereiden voor Outlook-export"</strong>. Dit doet
+      hetzelfde als het losse Office Script "13 - Voorbereiden voor Outlook-export": het
+      zet datumtekst om, maakt er een nette tabel <code>VPContacten</code> van, en laat zien
+      welke naam de Outlook-contactenlijst straks krijgt.</li>
+    <li>Sla het bestand op in <code>OneDrive - Veiligheidsregio Brabant-Noord\VP\VP-contactpersonen.xlsx</code>.</li>
+    <li>Start de Power Automate-flow "VP contactpersonen naar Outlook" (zie de link
+      onderaan) - die leest deze tabel uit en zet 'm om naar contacten + verjaardagsafspraken
+      in Outlook.</li>
+  </ol>
+
+  <button id="btn-voorbereiden" class="ms-Button">Voorbereiden voor Outlook-export</button>
+
+  <div id="status" class="status" aria-live="polite"></div>
+
+  <hr />
+
+  <p>
+    <a id="link-flow" href="https://make.powerautomate.com" target="_blank" rel="noopener">
+      Open Power Automate om de flow handmatig te starten &rarr;
+    </a>
+  </p>
+  <p class="hint">
+    (Deze link opent gewoon make.powerautomate.com in je browser - je moet daar zelf naar
+    "Mijn flows" &rarr; "VP contactpersonen naar Outlook" &rarr; "Uitvoeren" navigeren. Zie de
+    losse gids "Power Automate - stappenplan voor beginners.md" als je de flow nog moet
+    bouwen.)
+  </p>
+
+  <script src="../shared/vp-helpers.js"></script>
+  <script src="taskpane.js"></script>
+</body>
+</html>
