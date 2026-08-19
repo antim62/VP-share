@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  VP-invoegtoepassing als Office Add-in — manifest.xml
+
+  LET OP - vervang overal "https://localhost:3000" door de uiteindelijke hosting-URL
+  zodra je dit niet meer alleen lokaal test (zie README.md, hoofdstuk "Van test naar
+  productie"). Zolang je lokaal test met de meegeleverde dev-server klopt deze URL wel.
+-->
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xsi:type="TaskPaneApp">
+
+  <Id>e1f76d34-1734-4a57-a937-75e970a7dea7</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Veiligheidsregio Brabant-Noord</ProviderName>
+  <DefaultLocale>nl-NL</DefaultLocale>
+  <DisplayName DefaultValue="VP-invoegtoepassing" />
+  <Description DefaultValue="Eigen ribbon-tab &quot;VP&quot; met celbewerkingen, tekstbewerkingen, kaders/lijnen en contactpersonen-export voor VP-rapportages (vervanger van de oude VBA-invoegtoepassing)." />
+  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-80.png" />
+  <SupportUrl DefaultValue="https://localhost:3000" />
+  <AppDomains>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://localhost:3000/src/taskpane/taskpane.html" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Workbook">
+        <DesktopFormFactor>
+          <FunctionFile resid="Functions.Url" />
+
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <CustomTab id="VP.TabVP">
+              <Label resid="TabVP.Label" />
+
+              <!-- Groep 1: Celbewerkingen (knop 1-3) -->
+              <Group id="VP.Groep1">
+                <Label resid="Groep1.Label" />
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16" />
+                  <bt:Image size="32" resid="Icon.32" />
+                  <bt:Image size="80" resid="Icon.80" />
+                </Icon>
+
+                <Control xsi:type="Button" id="VP.Knop1">
+                  <Label resid="Knop1.Label" />
+                  <Supertip>
+                    <Title resid="Knop1.Label" />
+                    <Description resid="Knop1.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop1</FunctionName>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="VP.Knop2">
+                  <Label resid="Knop2.Label" />
+                  <Supertip>
+                    <Title resid="Knop2.Label" />
+                    <Description resid="Knop2.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop2</FunctionName>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="VP.Knop3">
+                  <Label resid="Knop3.Label" />
+                  <Supertip>
+                    <Title resid="Knop3.Label" />
+                    <Description resid="Knop3.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop3</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+
+              <!-- Groep 2: Tekstbewerkingen (knop 4-8) -->
+              <Group id="VP.Groep2">
+                <Label resid="Groep2.Label" />
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16" />
+                  <bt:Image size="32" resid="Icon.32" />
+                  <bt:Image size="80" resid="Icon.80" />
+                </Icon>
+
+                <Control xsi:type="Button" id="VP.Knop4">
+                  <Label resid="Knop4.Label" />
+                  <Supertip>
+                    <Title resid="Knop4.Label" />
+                    <Description resid="Knop4.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop4</FunctionName>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="VP.Knop5">
+                  <Label resid="Knop5.Label" />
+                  <Supertip>
+                    <Title resid="Knop5.Label" />
+                    <Description resid="Knop5.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop5</FunctionName>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="VP.Knop6">
+                  <Label resid="Knop6.Label" />
+                  <Supertip>
+                    <Title resid="Knop6.Label" />
+                    <Description resid="Knop6.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop6</FunctionName>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="VP.Knop7">
+                  <Label resid="Knop7.Label" />
+                  <Supertip>
+                    <Title resid="Knop7.Label" />
+                    <Description resid="Knop7.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop7</FunctionName>
+                  </Action>
+                </Control>
+
+                <!-- Origineel had hier een visuele scheider vóór Knop8; Add-in-ribbons
+                     ondersteunen geen losse scheidingsstreep binnen een groep, dus die
+                     vervalt hier (functioneel geen verschil, alleen optisch). -->
+                <Control xsi:type="Button" id="VP.Knop8">
+                  <Label resid="Knop8.Label" />
+                  <Supertip>
+                    <Title resid="Knop8.Label" />
+                    <Description resid="Knop8.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop8</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+
+              <!-- Groep 3: Kaders en lijnen (knop 9-12) -->
+              <Group id="VP.Groep3">
+                <Label resid="Groep3.Label" />
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16" />
+                  <bt:Image size="32" resid="Icon.32" />
+                  <bt:Image size="80" resid="Icon.80" />
+                </Icon>
+
+                <Control xsi:type="Button" id="VP.Knop9">
+                  <Label resid="Knop9.Label" />
+                  <Supertip>
+                    <Title resid="Knop9.Label" />
+                    <Description resid="Knop9.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop9</FunctionName>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="VP.Knop10">
+                  <Label resid="Knop10.Label" />
+                  <Supertip>
+                    <Title resid="Knop10.Label" />
+                    <Description resid="Knop10.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop10</FunctionName>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="VP.Knop11">
+                  <Label resid="Knop11.Label" />
+                  <Supertip>
+                    <Title resid="Knop11.Label" />
+                    <Description resid="Knop11.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop11</FunctionName>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="VP.Knop12">
+                  <Label resid="Knop12.Label" />
+                  <Supertip>
+                    <Title resid="Knop12.Label" />
+                    <Description resid="Knop12.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>Knop12</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+
+              <!-- Groep 5 (naam uit het origineel overgenomen, er was geen Groep4): Contactpersonen -->
+              <Group id="VP.Groep5">
+                <Label resid="Groep5.Label" />
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16" />
+                  <bt:Image size="32" resid="Icon.32" />
+                  <bt:Image size="80" resid="Icon.80" />
+                </Icon>
+
+                <Control xsi:type="Button" id="VP.Knop13">
+                  <Label resid="Knop13.Label" />
+                  <Supertip>
+                    <Title resid="Knop13.Label" />
+                    <Description resid="Knop13.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16" />
+                    <bt:Image size="32" resid="Icon.32" />
+                    <bt:Image size="80" resid="Icon.80" />
+                  </Icon>
+                  <!-- Knop 13 doet zelf geen Outlook-automatisering meer (kan niet vanuit
+                       een add-in/sandbox) maar opent een taakvenster met uitleg + knop 13
+                       ("Voorbereiden voor Outlook-export") en een link naar de Power
+                       Automate-flow die het echte werk doet. Zie
+                       "13 - Voorbereiden voor Outlook-export.ts" / de Power Automate-gidsen. -->
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>VP.Taskpane</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url" />
+                  </Action>
+                </Control>
+              </Group>
+
+            </CustomTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.16" DefaultValue="https://localhost:3000/assets/icon-16.png" />
+        <bt:Image id="Icon.32" DefaultValue="https://localhost:3000/assets/icon-32.png" />
+        <bt:Image id="Icon.80" DefaultValue="https://localhost:3000/assets/icon-80.png" />
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Functions.Url" DefaultValue="https://localhost:3000/src/functions/functions.html" />
+        <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/src/taskpane/taskpane.html" />
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="TabVP.Label" DefaultValue="VP" />
+        <bt:String id="Groep1.Label" DefaultValue="Celbewerkingen" />
+        <bt:String id="Groep2.Label" DefaultValue="Tekstbewerkingen" />
+        <bt:String id="Groep3.Label" DefaultValue="Kaders en lijnen" />
+        <bt:String id="Groep5.Label" DefaultValue="Contactpersonen" />
+        <bt:String id="Knop1.Label" DefaultValue="Niet lege cellen leeg maken" />
+        <bt:String id="Knop2.Label" DefaultValue="Samenvoeging cellen opheffen" />
+        <bt:String id="Knop3.Label" DefaultValue="Automatische kolombreedte" />
+        <bt:String id="Knop4.Label" DefaultValue="Tekst -> Datum/Tijd" />
+        <bt:String id="Knop5.Label" DefaultValue="Tekst -> Valuta" />
+        <bt:String id="Knop6.Label" DefaultValue="Tekst -> Percentage" />
+        <bt:String id="Knop7.Label" DefaultValue="Tekst -> Getal" />
+        <bt:String id="Knop8.Label" DefaultValue="Alle tekstbewerkingen" />
+        <bt:String id="Knop9.Label" DefaultValue="Links uitlijnen (alle cellen)" />
+        <bt:String id="Knop10.Label" DefaultValue="Centreren (alle cellen)" />
+        <bt:String id="Knop11.Label" DefaultValue="Rechts uitlijnen (alle cellen)" />
+        <bt:String id="Knop12.Label" DefaultValue="Omlijnen" />
+        <bt:String id="Knop13.Label" DefaultValue="Contactpersonen naar Outlook" />
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="Knop1.Tooltip" DefaultValue="Maakt cellen die ogenschijnlijk leeg zijn ook daadwerkelijk leeg (formules en samengevoegde cellen blijven staan)." />
+        <bt:String id="Knop2.Tooltip" DefaultValue="Heft alle samengevoegde cellen in de rapportage op." />
+        <bt:String id="Knop3.Tooltip" DefaultValue="Stelt de breedte van alle kolommen van het werkblad automatisch juist in." />
+        <bt:String id="Knop4.Tooltip" DefaultValue="Zet cellen die ogenschijnlijk datum- of tijdwaarden bevatten daadwerkelijk om naar een Excel datum-/tijdwaarde." />
+        <bt:String id="Knop5.Tooltip" DefaultValue="Zet cellen die ogenschijnlijk geldbedragen bevatten daadwerkelijk om naar een Excel valutawaarde." />
+        <bt:String id="Knop6.Tooltip" DefaultValue="Zet cellen die ogenschijnlijk percentages bevatten daadwerkelijk om naar een Excel percentage." />
+        <bt:String id="Knop7.Tooltip" DefaultValue="Zet cellen die ogenschijnlijk getalwaarden bevatten daadwerkelijk om naar een Excel getalwaarde." />
+        <bt:String id="Knop8.Tooltip" DefaultValue="Past direct alle tekstbewerkingen (4 t/m 7) na elkaar toe op de cellen." />
+        <bt:String id="Knop9.Tooltip" DefaultValue="Lijnt alle cellen links uit." />
+        <bt:String id="Knop10.Tooltip" DefaultValue="Centreert de inhoud van alle cellen horizontaal in de cel." />
+        <bt:String id="Knop11.Tooltip" DefaultValue="Lijnt alle cellen rechts uit." />
+        <bt:String id="Knop12.Tooltip" DefaultValue="Omlijnt alle gevulde cellen van het werkblad." />
+        <bt:String id="Knop13.Tooltip" DefaultValue="Bereidt een VP-contactpersonenexport voor en opent uitleg over de Outlook-export via Power Automate." />
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>
