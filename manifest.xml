@@ -57,9 +57,9 @@
                     <Description resid="Knop1.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop1.Icon16" />
+                    <bt:Image size="32" resid="Knop1.Icon32" />
+                    <bt:Image size="80" resid="Knop1.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop1</FunctionName>
@@ -73,9 +73,9 @@
                     <Description resid="Knop2.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop2.Icon16" />
+                    <bt:Image size="32" resid="Knop2.Icon32" />
+                    <bt:Image size="80" resid="Knop2.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop2</FunctionName>
@@ -89,9 +89,9 @@
                     <Description resid="Knop3.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop3.Icon16" />
+                    <bt:Image size="32" resid="Knop3.Icon32" />
+                    <bt:Image size="80" resid="Knop3.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop3</FunctionName>
@@ -115,9 +115,9 @@
                     <Description resid="Knop4.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop4.Icon16" />
+                    <bt:Image size="32" resid="Knop4.Icon32" />
+                    <bt:Image size="80" resid="Knop4.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop4</FunctionName>
@@ -131,9 +131,9 @@
                     <Description resid="Knop5.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop5.Icon16" />
+                    <bt:Image size="32" resid="Knop5.Icon32" />
+                    <bt:Image size="80" resid="Knop5.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop5</FunctionName>
@@ -147,9 +147,9 @@
                     <Description resid="Knop6.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop6.Icon16" />
+                    <bt:Image size="32" resid="Knop6.Icon32" />
+                    <bt:Image size="80" resid="Knop6.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop6</FunctionName>
@@ -163,9 +163,9 @@
                     <Description resid="Knop7.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop7.Icon16" />
+                    <bt:Image size="32" resid="Knop7.Icon32" />
+                    <bt:Image size="80" resid="Knop7.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop7</FunctionName>
@@ -182,9 +182,9 @@
                     <Description resid="Knop8.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop8.Icon16" />
+                    <bt:Image size="32" resid="Knop8.Icon32" />
+                    <bt:Image size="80" resid="Knop8.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop8</FunctionName>
@@ -208,9 +208,9 @@
                     <Description resid="Knop9.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop9.Icon16" />
+                    <bt:Image size="32" resid="Knop9.Icon32" />
+                    <bt:Image size="80" resid="Knop9.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop9</FunctionName>
@@ -224,9 +224,9 @@
                     <Description resid="Knop10.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop10.Icon16" />
+                    <bt:Image size="32" resid="Knop10.Icon32" />
+                    <bt:Image size="80" resid="Knop10.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop10</FunctionName>
@@ -240,9 +240,9 @@
                     <Description resid="Knop11.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop11.Icon16" />
+                    <bt:Image size="32" resid="Knop11.Icon32" />
+                    <bt:Image size="80" resid="Knop11.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop11</FunctionName>
@@ -256,9 +256,9 @@
                     <Description resid="Knop12.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop12.Icon16" />
+                    <bt:Image size="32" resid="Knop12.Icon32" />
+                    <bt:Image size="80" resid="Knop12.Icon80" />
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>Knop12</FunctionName>
@@ -282,9 +282,9 @@
                     <Description resid="Knop13.Tooltip" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
+                    <bt:Image size="16" resid="Knop13.Icon16" />
+                    <bt:Image size="32" resid="Knop13.Icon32" />
+                    <bt:Image size="80" resid="Knop13.Icon80" />
                   </Icon>
                   <!-- Knop 13 doet zelf geen Outlook-automatisering meer (kan niet vanuit
                        een add-in/sandbox) maar opent een taakvenster met uitleg + knop 13
@@ -306,9 +306,52 @@
 
     <Resources>
       <bt:Images>
+        <!-- Tab en groepen: het echte VP-logo -->
         <bt:Image id="Icon.16" DefaultValue="https://localhost:3000/assets/icon-16.png" />
         <bt:Image id="Icon.32" DefaultValue="https://localhost:3000/assets/icon-32.png" />
         <bt:Image id="Icon.80" DefaultValue="https://localhost:3000/assets/icon-80.png" />
+        <!-- Per-knop iconen: eigen ontworpen set (zelfde blauw als het VP-logo), want de
+             originele imageMso-iconen (ActionDelete, MergeCenter, BordersAll, ...) kunnen
+             Office Add-ins niet hergebruiken - zie LEESMIJ/README. -->
+        <bt:Image id="Knop1.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop1-16.png" />
+        <bt:Image id="Knop1.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop1-32.png" />
+        <bt:Image id="Knop1.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop1-80.png" />
+        <bt:Image id="Knop2.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop2-16.png" />
+        <bt:Image id="Knop2.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop2-32.png" />
+        <bt:Image id="Knop2.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop2-80.png" />
+        <bt:Image id="Knop3.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop3-16.png" />
+        <bt:Image id="Knop3.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop3-32.png" />
+        <bt:Image id="Knop3.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop3-80.png" />
+        <bt:Image id="Knop4.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop4-16.png" />
+        <bt:Image id="Knop4.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop4-32.png" />
+        <bt:Image id="Knop4.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop4-80.png" />
+        <bt:Image id="Knop5.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop5-16.png" />
+        <bt:Image id="Knop5.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop5-32.png" />
+        <bt:Image id="Knop5.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop5-80.png" />
+        <bt:Image id="Knop6.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop6-16.png" />
+        <bt:Image id="Knop6.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop6-32.png" />
+        <bt:Image id="Knop6.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop6-80.png" />
+        <bt:Image id="Knop7.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop7-16.png" />
+        <bt:Image id="Knop7.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop7-32.png" />
+        <bt:Image id="Knop7.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop7-80.png" />
+        <bt:Image id="Knop8.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop8-16.png" />
+        <bt:Image id="Knop8.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop8-32.png" />
+        <bt:Image id="Knop8.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop8-80.png" />
+        <bt:Image id="Knop9.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop9-16.png" />
+        <bt:Image id="Knop9.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop9-32.png" />
+        <bt:Image id="Knop9.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop9-80.png" />
+        <bt:Image id="Knop10.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop10-16.png" />
+        <bt:Image id="Knop10.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop10-32.png" />
+        <bt:Image id="Knop10.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop10-80.png" />
+        <bt:Image id="Knop11.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop11-16.png" />
+        <bt:Image id="Knop11.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop11-32.png" />
+        <bt:Image id="Knop11.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop11-80.png" />
+        <bt:Image id="Knop12.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop12-16.png" />
+        <bt:Image id="Knop12.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop12-32.png" />
+        <bt:Image id="Knop12.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop12-80.png" />
+        <bt:Image id="Knop13.Icon16" DefaultValue="https://localhost:3000/assets/knop/knop13-16.png" />
+        <bt:Image id="Knop13.Icon32" DefaultValue="https://localhost:3000/assets/knop/knop13-32.png" />
+        <bt:Image id="Knop13.Icon80" DefaultValue="https://localhost:3000/assets/knop/knop13-80.png" />
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Functions.Url" DefaultValue="https://localhost:3000/src/functions/functions.html" />
