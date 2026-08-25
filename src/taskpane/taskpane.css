@@ -15,7 +15,7 @@ ol {
 }
 
 .ms-Button {
-  background-color: #c41e1e; /* zelfde rood als het VP-icoon */
+  background-color: #004b70; /* zelfde blauw als het VP-logo */
   color: white;
   border: none;
   padding: 8px 16px;
@@ -23,10 +23,32 @@ ol {
   border-radius: 4px;
   cursor: pointer;
   width: 100%;
+  margin-top: 8px;
 }
 
 .ms-Button:hover {
-  background-color: #a91818;
+  background-color: #003651;
+}
+
+.ms-Button:disabled {
+  background-color: #b7c2c9;
+  cursor: not-allowed;
+}
+
+.select-label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+#groep-select {
+  width: 100%;
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .status {

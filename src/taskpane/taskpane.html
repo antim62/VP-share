@@ -16,17 +16,30 @@
   </p>
 
   <ol>
-    <li>Klik hieronder op <strong>"Voorbereiden voor Outlook-export"</strong>. Dit doet
-      hetzelfde als het losse Office Script "13 - Voorbereiden voor Outlook-export": het
-      zet datumtekst om, maakt er een nette tabel <code>VPContacten</code> van, en laat zien
-      welke naam de Outlook-contactenlijst straks krijgt.</li>
-    <li>Sla het bestand op in <code>OneDrive - Veiligheidsregio Brabant-Noord\VP\VP-contactpersonen.xlsx</code>.</li>
-    <li>Start de Power Automate-flow "VP contactpersonen naar Outlook" (zie de link
-      onderaan) - die leest deze tabel uit en zet 'm om naar contacten + verjaardagsafspraken
-      in Outlook.</li>
+    <li>Exporteer <strong>eenmalig alle contactpersonen</strong> vanuit VP (dus niet meer
+      vooraf filteren op één Post of Ploeg) en open dat bestand.</li>
+    <li>Klik hieronder op <strong>"1. Overzicht laden"</strong> - dit zoekt alle Ploegen en
+      Posten die in het bestand voorkomen.</li>
+    <li>Kies in de lijst de Ploeg of Post die je nu wilt exporteren, en klik op
+      <strong>"2. Voorbereiden voor deze selectie"</strong>. Dit zet alleen die rijen (met
+      datumtekst omgezet) op een apart werkblad "VPContacten" als nette tabel.</li>
+    <li>Sla het bestand op in <code>OneDrive - Veiligheidsregio Brabant-Noord\VP\VP-contactpersonen.xlsx</code>
+      en start daarna de Power Automate-flow (link onderaan).</li>
   </ol>
 
-  <button id="btn-voorbereiden" class="ms-Button">Voorbereiden voor Outlook-export</button>
+  <p class="hint">
+    Wil je een andere Ploeg/Post exporteren? Kom gewoon terug naar dit taakvenster, kies een
+    andere waarde in de lijst en klik opnieuw op stap 2 - je hoeft niet opnieuw vanuit VP te
+    exporteren. Werkte je liever nog met een al vooraf gefilterd VP-bestand (met maar één
+    Post/Ploeg erin): dat werkt gewoon door, de lijst toont dan automatisch die ene optie.
+  </p>
+
+  <button id="btn-laden" class="ms-Button">1. Overzicht laden</button>
+
+  <label for="groep-select" class="select-label">Ploeg of Post:</label>
+  <select id="groep-select" disabled></select>
+
+  <button id="btn-voorbereiden" class="ms-Button" disabled>2. Voorbereiden voor deze selectie</button>
 
   <div id="status" class="status" aria-live="polite"></div>
 

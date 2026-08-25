@@ -83,6 +83,21 @@ function parsePlainNumber(text) {
   return isNaN(n) ? null : n;
 }
 
+/**
+ * Bepaalt bij welke Ploeg of Post een rij van een VP-contactpersonenexport hoort - zelfde
+ * voorrangsregel als BepaalMapNaam in de oude VBA: heeft de rij een Ploeg ingevuld, dan telt
+ * die (ongeacht wat er in de Post-kolom staat); anders telt de Post, als die gevuld is.
+ * Gebruikt door zowel het overzicht (welke groepen komen voor) als het filteren (welke rijen
+ * horen bij de gekozen groep) in taskpane.js.
+ */
+function determineRowGroup(row, ploegCol, postCol) {
+  const ploeg = ploegCol >= 0 && row[ploegCol] != null ? String(row[ploegCol]).trim() : "";
+  if (ploeg) return { type: "ploeg", value: ploeg, label: ploeg };
+  const post = postCol >= 0 && row[postCol] != null ? String(row[postCol]).trim() : "";
+  if (post) return { type: "post", value: post, label: `Post ${post}` };
+  return null;
+}
+
 function parseCellRef(cell) {
   const m = cell.match(/^([A-Z]+)(\d+)$/);
   if (!m) return { row: 0, col: 0 };
